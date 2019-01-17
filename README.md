@@ -9,7 +9,7 @@ Once configured, users/developers need to define their custom event handlers, by
 First, start by closing the repository:
 
 ```
-git clone git@github.com:TheHive-Project/TheHiveHooks.git
+git clone https://github.com/TheHive-Project/TheHiveHooks.git
 ```
 
 We recommend to use `virtualenv` for development:
