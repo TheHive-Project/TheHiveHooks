@@ -4,7 +4,9 @@ from logging.handlers import RotatingFileHandler
 from pyee import EventEmitter
 
 # Declare the logger
-handler = RotatingFileHandler('thehive-hooks.log', maxBytes=10000000, backupCount=1)
+app_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+pathLog = app_dir + '/thehive-hooks.log'
+handler = RotatingFileHandler(pathLog, maxBytes=10000000, backupCount=1)
 handler.setLevel(logging.INFO)
 handler.setFormatter(logging.Formatter(
     '[%(asctime)s] %(levelname)s in %(module)s: %(message)s'
