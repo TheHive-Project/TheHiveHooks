@@ -1,6 +1,7 @@
 from flask import Flask
 import logging
 from logging.handlers import RotatingFileHandler
+import os
 from pyee import EventEmitter
 
 # Declare the logger
